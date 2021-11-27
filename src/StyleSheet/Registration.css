@@ -1,0 +1,237 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.containe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.form_box {
+    width: 500px;
+    /* height: 530px; */
+    background-color: rgb(0, 0, 0, .5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 2%;
+}
+
+.body_form {
+    width: 100%;
+}
+
+.title_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.title_div h1{
+    color: rgb(0, 255, 106);
+}
+
+.title_div p{
+    color: white;
+    font-size: 14.3px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    height: 35px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+.name_field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.name_field div {
+    width: 45%;
+}
+
+.field_heading {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.email_field {
+    margin-bottom: 10px;
+}
+
+.gender_district {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gender_field {
+    margin-bottom: 10px;
+    width: 45%;
+}
+
+.gender_options {
+    height: 35px;
+}
+
+.gender_field div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gender_field div div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.gender_field div div h3 {
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.district_field {
+    width: 45%;
+}
+
+.district_selector {
+    height: 35px;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.phone_field {
+    margin-bottom: 10px;
+}
+
+.submission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.submit_button {
+    margin-top: 10px;
+    height: 30px;
+    width: 80%;
+    margin-bottom: 10px;
+    background-color: springgreen;
+    border: none;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.submit_button:hover {
+    background-color: rgba(0, 255, 128, 0.411);
+}
+
+.submission p {
+    color: white;
+}
+
+/* style  */
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+/* style  */
+
+
+@media (max-width:550px) {
+
+    .containe {
+        height: 900px;
+    }
+
+    .form_box {
+        padding: 20px 40px;
+    }
+    .name_field {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .name_field div{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .gender_district {
+        flex-direction: column;
+    }
+
+    .gender_field{
+        width: 100%;
+    }
+
+    .district_field{
+        width: 100%;
+    }
+}

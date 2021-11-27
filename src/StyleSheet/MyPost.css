@@ -1,0 +1,39 @@
+
+
+.classdesign{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.imageStyle{
+    height:350px;
+    width:40%;
+    margin:3% 0%;
+}
+
+@media (max-width:950px) {
+    .imageStyle{
+        width:60%;
+    }
+}
+
+@media (max-width:700px) {
+    .imageStyle{
+        height:300px;
+    }
+}
+
+@media (max-width:550px) {
+    .imageStyle{
+        width:80%;
+    }
+}
+
+@media (max-width:400px) {
+    .imageStyle{
+        height:250px;
+    }
+}
