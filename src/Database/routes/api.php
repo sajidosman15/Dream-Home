@@ -6,9 +6,6 @@ use App\Http\Controllers\ReadController;
 use App\Http\Controllers\WriteController;
 use App\Http\Controllers\UpdateController;
 
-// header("Access-Control-Allow-Origin:", "*");
-// header("Access-Control-Allow-Methods:", "PUT, GET, POST");
-// header("Access-Control-Allow-Headers:", "Origin, Content-Type, X-Auth-Token");
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

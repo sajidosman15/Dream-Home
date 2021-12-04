@@ -70,10 +70,14 @@ const Login = () => {
                 var value = response.data;
                 setError1(value[0]);
                 setError2(value[1]);
-                if (value[2] !== "Fail") {
+
+                if (value[2] !== "Fail" && value[2] !== "undefined") {
                     setFailed("");
                     localStorage.setItem("token", value[2]);
                     isVerified(true);
+                }
+                else if(value[2] === "undefined"){
+                    setFailed("");
                 }
                 else {
                     setFailed("Email or Password is incorrect!");

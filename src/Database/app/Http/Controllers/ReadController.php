@@ -187,6 +187,8 @@ class ReadController extends Controller
                 $errors[2]="Fail";
             }
             
+        }else{
+            $errors[2]="undefined";
         }
         // if ($request->isMethod('POST')) {
         //     $districts=DB::table('locations')
